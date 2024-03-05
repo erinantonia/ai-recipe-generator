@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe generator</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="ingredient">
           <input
             type="text"
             placeholder="Include this ingredient"
@@ -26,10 +27,7 @@
 
         <div class="recipe-container">
           <h2>Recipe:</h2>
-          Chicken Salad
-          <br />
-          300g chicken, 2 tomatoes, 2 cups cos lettuce, 300g chicken, 2
-          tomatoes, 2 cups cos lettuce
+          <div id="recipe"></div>
         </div>
       </main>
 
