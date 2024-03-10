@@ -15,23 +15,23 @@
       </header>
 
       <main>
-        <form id="ingredient">
-          <input
-            type="text"
-            placeholder="Include this ingredient"
-            required
-            autofocus="on"
-            class="ingredient-input"
-            id="ingredient-input"
-          />
-          <input type="submit" value="Submit" class="submit-button" />
-        </form>
+        <div class="ingredient-container">
+          <form id="ingredient-form">
+            <input
+              type="text"
+              placeholder="Base a recipe off these ingredients..."
+              required
+              autofocus="on"
+              class="ingredient-input"
+              id="ingredient-input"
+            />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+          <small class="hint">e.g oats, banana, or tomatoes</small>
+        </div>
 
-        <div class="recipe-container">
-          <h2>Recipe:</h2>
-          <div id="recipe"></div>
+        <div class="recipe hidden">
           <div id="recipe-title"></div>
-        </br>
           <div id="recipe-ingredients"></div>
         </div>
       </main>
